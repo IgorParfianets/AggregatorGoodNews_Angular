@@ -1,0 +1,66 @@
+<div class="auth-page mt-5">
+  <div class="container page">
+    <div class="row w-75">
+      <div class="col-md-4 offset-md-6 col-xs-12">
+        <h1 class="text-xs-center">Регистрация</h1>
+
+        <form [formGroup]?="form" class="container row gy-1">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              placeholder="Имя или Ник"
+              formControlName="username"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              placeholder="E-mail"
+              formControlName="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              placeholder="Пароль"
+              formControlName="password"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              placeholder="Повторить пароль"
+              formControlName="confirmPassword"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Рассылка новостей</label>
+            <input
+              type="checkbox"
+              class="form-check-input form-check-sm"
+              formControlName="spam"
+              checked
+            />
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-sm w-100">
+              Зарегистрироваться
+            </button>
+          </div>
+          <div class="mt-2">
+            Уже есть аккаунт? Нажми
+            <a style="color: darkred">сюда</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
